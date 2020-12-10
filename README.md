@@ -1,7 +1,7 @@
 <h2> Swift Squares </h2>
 <h4>A simple reaction time game for IOS</h4>
 
-To play(with XCode):
+How To play(with XCode):
 ```
  git clone https://github.com/HexSeal/Swift-Squares/
 ```
