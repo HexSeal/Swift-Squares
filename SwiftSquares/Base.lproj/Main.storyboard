@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AsL-BI-IGY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eab-Id-pgK">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftSquares" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="GameViewController" customModule="SwiftSquares" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="20" y="99" width="89" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
-                                <state key="normal" title="1">
+                                <state key="normal">
                                     <color key="titleColor" systemColor="systemPinkColor"/>
                                     <color key="titleShadowColor" systemColor="systemPinkColor"/>
                                 </state>
@@ -29,11 +29,11 @@
                                     <action selector="tilePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aiL-oV-MqR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eC4-DX-MXH">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eC4-DX-MXH">
                                 <rect key="frame" x="305" y="98" width="89" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
-                                <state key="normal" title="2">
+                                <state key="normal">
                                     <color key="titleColor" systemColor="systemPinkColor"/>
                                     <color key="titleShadowColor" systemColor="systemPinkColor"/>
                                 </state>
@@ -41,24 +41,23 @@
                                     <action selector="tilePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TXR-5H-VI5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDm-ly-s3b">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDm-ly-s3b">
                                 <rect key="frame" x="20" y="404" width="89" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
-                                <state key="normal" title="4">
+                                <state key="normal">
                                     <color key="titleColor" systemColor="systemPinkColor"/>
                                     <color key="titleShadowColor" systemColor="systemPinkColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ddr-Of-xlp"/>
                                     <action selector="tilePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5BI-VH-cVI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQr-ut-ibv">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQr-ut-ibv">
                                 <rect key="frame" x="305" y="404" width="89" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
-                                <state key="normal" title="5">
+                                <state key="normal">
                                     <color key="titleColor" systemColor="systemPinkColor"/>
                                     <color key="titleShadowColor" systemColor="systemPinkColor"/>
                                 </state>
@@ -66,11 +65,11 @@
                                     <action selector="tilePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xFQ-oY-AsJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0c-Ph-5Yf">
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0c-Ph-5Yf">
                                 <rect key="frame" x="305" y="716" width="89" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
-                                <state key="normal" title="8">
+                                <state key="normal">
                                     <color key="titleColor" systemColor="systemPinkColor"/>
                                     <color key="titleShadowColor" systemColor="systemPinkColor"/>
                                 </state>
@@ -78,11 +77,11 @@
                                     <action selector="tilePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PCX-Sl-eqM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0h-nB-fNo">
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0h-nB-fNo">
                                 <rect key="frame" x="20" y="716" width="89" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
-                                <state key="normal" title="7">
+                                <state key="normal">
                                     <color key="titleColor" systemColor="systemPinkColor"/>
                                     <color key="titleShadowColor" systemColor="systemPinkColor"/>
                                 </state>
@@ -90,11 +89,11 @@
                                     <action selector="tilePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bd7-oD-g8g"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBb-gv-Skg">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBb-gv-Skg">
                                 <rect key="frame" x="163" y="249" width="89" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
-                                <state key="normal" title="3">
+                                <state key="normal">
                                     <color key="titleColor" systemColor="systemPinkColor"/>
                                     <color key="titleShadowColor" systemColor="systemPinkColor"/>
                                 </state>
@@ -102,14 +101,26 @@
                                     <action selector="tilePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iK0-Ah-3E5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPC-W3-KfZ">
+                                <rect key="frame" x="163" y="560" width="89" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <state key="normal">
+                                    <color key="titleColor" systemColor="systemPinkColor"/>
+                                    <color key="titleShadowColor" systemColor="systemPinkColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="tilePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ynG-g5-TyV"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Byx-Ks-Nfi">
                                 <rect key="frame" x="20" y="15" width="38" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Quit Game">
+                                <state key="normal">
                                     <imageReference key="image" image="arrowshape.turn.up.backward.circle" catalog="system" symbolScale="large"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="dkx-z0-nzr" eventType="touchUpInside" id="Z2v-gQ-lTc"/>
+                                    <segue destination="adI-S3-Ud8" kind="unwind" unwindAction="unwindToStartWithSegue:" id="HMh-xU-N64"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VrJ-z6-Yqb">
@@ -119,37 +130,42 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPC-W3-KfZ">
-                                <rect key="frame" x="163" y="559" width="89" height="89"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time Left: 60" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x0H-Bl-waI">
+                                <rect key="frame" x="133" y="15" width="119" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemPinkColor"/>
-                                <state key="normal" title="6">
-                                    <color key="titleColor" systemColor="systemPinkColor"/>
-                                    <color key="titleShadowColor" systemColor="systemPinkColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="tilePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ynG-g5-TyV"/>
-                                </connections>
-                            </button>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="4gz-r9-zZF"/>
                     <connections>
-                        <outlet property="backPressed" destination="Byx-Ks-Nfi" id="8Cn-R3-9DL"/>
+                        <outlet property="btn0" destination="6DV-UF-VqO" id="zHl-it-4ea"/>
+                        <outlet property="btn1" destination="eC4-DX-MXH" id="DtR-ng-ONO"/>
+                        <outlet property="btn2" destination="jBb-gv-Skg" id="o5E-hQ-I6z"/>
+                        <outlet property="btn3" destination="jDm-ly-s3b" id="bOR-SD-raS"/>
+                        <outlet property="btn4" destination="RQr-ut-ibv" id="sGg-xr-Nhz"/>
+                        <outlet property="btn5" destination="gPC-W3-KfZ" id="g5h-qG-UKo"/>
+                        <outlet property="btn6" destination="c0h-nB-fNo" id="2xc-sh-y1i"/>
+                        <outlet property="btn7" destination="N0c-Ph-5Yf" id="L4c-W4-ZT5"/>
                         <outlet property="scoreLabel" destination="VrJ-z6-Yqb" id="AIt-fO-bMm"/>
+                        <outlet property="timeLabel" destination="x0H-Bl-waI" id="AGE-1u-vgh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="adI-S3-Ud8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-39.130434782608695" y="-23.4375"/>
+            <point key="canvasLocation" x="871.01449275362324" y="-23.4375"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7XF-am-C62">
             <objects>
                 <viewController id="gOf-af-1kI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3cv-5c-W4f">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rules" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQF-RY-5Cb">
@@ -185,9 +201,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="5"/>
                                 <state key="normal" title="Button" image="arrowshape.turn.up.backward.circle" catalog="system"/>
-                                <connections>
-                                    <segue destination="AsL-BI-IGY" kind="show" id="BLJ-GU-u2x"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cKD-LD-nc9"/>
@@ -197,14 +210,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LD2-vh-lHR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="800.00000000000011" y="-23.4375"/>
+            <point key="canvasLocation" x="1710.144927536232" y="-23.4375"/>
         </scene>
-        <!--View Controller-->
+        <!--Start View Controller-->
         <scene sceneID="nE2-Bm-6Eg">
             <objects>
-                <viewController id="AsL-BI-IGY" sceneMemberID="viewController">
+                <viewController id="AsL-BI-IGY" customClass="StartViewController" customModule="SwiftSquares" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ASR-q5-XCf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awA-mm-uVZ">
@@ -213,7 +226,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="v8h-56-HL4"/>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="v8h-56-HL4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUl-F8-EO3">
@@ -232,13 +245,52 @@
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9UV-O7-zsB">
+                                <rect key="frame" x="187" y="438" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dub-HS-yAd">
+                                <rect key="frame" x="93" y="418" width="229" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" updatesFrequently="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BES-9O-jia"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="d6q-AN-Gdi"/>
+                    <connections>
+                        <outlet property="lastScoreLabel" destination="dub-HS-yAd" id="QL4-Up-88P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZXM-dT-LLV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="-23.4375"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gBj-f1-ZOB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eab-Id-pgK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="hCQ-KJ-egz"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3BB-vT-Cff">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="AsL-BI-IGY" kind="relationship" relationship="rootViewController" id="kbX-y8-ARo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="86q-ym-DOu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-891.304347826087" y="-23.4375"/>
         </scene>
